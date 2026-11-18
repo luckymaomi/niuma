@@ -1,0 +1,33 @@
+@media (max-width: 720px) {
+  .app-shell {
+    width: min(100% - 1.2rem, 920px);
+    padding-top: 1rem;
+  }
+
+  .rate-grid,
+  .exchange-grid,
+  .money-grid,
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .live-header,
+  .settings-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .brand-logo {
+    width: 96px;
+    height: 96px;
+  }
+
+  .live-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .rate-item {
+    text-align: left;
+  }
+}

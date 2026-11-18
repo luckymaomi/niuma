@@ -1,0 +1,25 @@
+.app-shell {
+  width: min(920px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.8rem 0 2.8rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.panel {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.35rem 1.45rem 1.45rem;
+  box-shadow: var(--shadow);
+}
+
+.page-title,
+.section-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+}

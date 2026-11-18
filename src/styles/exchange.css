@@ -1,0 +1,96 @@
+.exchange-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.exchange-item {
+  display: grid;
+  gap: 0.48rem;
+  padding: 1rem 1.05rem;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+}
+
+.exchange-item[data-exchange-id="luckin"],
+.exchange-item[data-exchange-id="kfc-burger"] {
+  border-color: #ddd6a8;
+  background: var(--gold-soft);
+}
+
+.exchange-item[data-exchange-id="heytea"],
+.exchange-item[data-exchange-id="movie"] {
+  border-color: #b7e4dc;
+  background: var(--teal-soft);
+}
+
+.exchange-item[data-exchange-id="mcdonald"],
+.exchange-item[data-exchange-id="bento"] {
+  border-color: #c9d9ff;
+  background: var(--azure-soft);
+}
+
+.exchange-top,
+.exchange-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.exchange-name {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.exchange-price,
+.exchange-next {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.exchange-count {
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--ink-soft);
+}
+
+.exchange-track {
+  position: relative;
+  height: 0.78rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.exchange-fill {
+  position: relative;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  transition: width 0.25s linear;
+  overflow: hidden;
+}
+
+.exchange-item[data-exchange-id="heytea"] .exchange-fill,
+.exchange-item[data-exchange-id="movie"] .exchange-fill {
+  background: var(--teal);
+}
+
+.exchange-item[data-exchange-id="mcdonald"] .exchange-fill,
+.exchange-item[data-exchange-id="bento"] .exchange-fill {
+  background: var(--azure);
+}
+
+.exchange-sheen {
+  display: none;
+}
